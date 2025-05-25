@@ -1,0 +1,262 @@
+body, h1, h2, h3, p, ul, li, input, select, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 98%;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+}
+
+/*header*/
+#header{
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border: 1px solid black;
+}
+
+#header .logo img{
+    max-height: 50px;
+}
+
+#header .search_box{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#search-divider{
+    width: 1px;
+    background-color: black;
+    height: 24px;
+}
+
+.category-select{
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: transparent;
+    height: 100%;
+    width: auto;
+    min-width: 100px;
+}
+
+.search_box input{
+    flex-grow: 1;
+    border: none; 
+    padding: 10px 15px;
+    font-size: 14px;
+    outline: none;
+    min-width: 150px;
+    background-color: transparent;
+}
+
+#header .search_box input[type="search"]{
+    padding: 10px 16px;
+    min-width: 250px;
+}
+
+#header .cart_infor a{
+    background-color: #FF3399;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;  
+}
+
+#header .cart_infor a:hover{
+    background-color: yellow;
+    color: red;
+}
+
+#product-image-container image{
+    height: 400px;
+    width: 200px;
+}
+
+/*menu*/
+
+#menu{
+    background-color: black;
+}
+
+#menu ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu ul li{
+    position: relative;
+}
+
+#menu ul li a{
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    font-weight: bold;
+}
+
+#menu ul li a:hover{
+    background-color: #FF3399;
+}
+
+#menu ul li .dropdown{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: white;
+    border: 1px solid black;
+    min-width: 180px;
+    z-index: 1000;
+    flex-direction: column;
+    border-radius: 10px;
+}
+#menu ul li:hover .dropdown{
+    display: flex;
+}
+
+#menu ul li .dropdown li a{
+    color: black;
+    padding: 10px 15px;
+}
+
+/*content*/
+
+#content{
+    padding: 20px;
+}
+
+.content_control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.content_control #cho-gan-lai{
+    display: flex;
+    gap: 10px;
+}
+
+#cho-gan-lai img{
+    width: 35px;
+}
+
+#default-select{
+    width: 150px;
+}
+
+.content_control select{
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+.trang span , a{
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black
+}
+
+.trang span{
+    background-color: black;
+    color: white;
+}
+
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+}
+
+.product-item{
+    border: 1px solid rgb(241, 241, 241);
+    text-align: center;
+    background-color: white;
+    overflow: hidden;
+}
+
+.product-image-container {
+    position: relative;
+    overflow: hidden; 
+}
+
+.product-item img{
+    width: 200px;
+    height: 400px;
+    object-fit: cover
+}
+
+.product-item:hover img{
+    transform: scale(2);
+}
+
+.product-tag{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color:orange;
+    color: white;
+    padding: 3px 8px;
+    font-size: 0.8em;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.product-tag.sale{
+    right: 10px;
+    left: auto;
+    background-color: #25978c;
+}
+
+.product-infor{
+    padding: 15px;
+    background-color: #003366;
+    color: white;
+}
+
+.product-name{
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: white;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.product-name:hover{
+    color: #FFFF66;
+}
+
+.product-price{
+    margin-bottom: 10px;
+}
+
+.product-price .discount-price{
+    color: red;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.product-price .origin-price{
+    color: white;
+    text-decoration: line-through;
+}

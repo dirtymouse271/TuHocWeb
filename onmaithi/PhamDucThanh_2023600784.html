@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PhamDucThanh_2023600784.css">
+    <title>Trang web bán hàng</title>
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <div class="logo">
+                <img src="image/bf21b6aa-e31f-4d06-b767-de7637289773.jpg" alt="Shop logo">
+            </div>
+            <div class="search_box">
+                <input type="search" placeholder="search">
+                <span class="search-divider"></span>
+                <div class="search-categories">
+                    <select name="Categories" id="category-select">
+                        <option value="Categories">Categories</option>
+                    </select>
+                </div>
+            </div>
+            <div class="cart_infor">
+                <a href="#">0 Item($)-$0.00</a>
+            </div>
+        </header>
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Clothing(0)</a></li>
+                        <li><a href="#">Coats(0)</a></li>
+                        <li><a href="#">T-shirts(0)</a></li>
+                        <li><a href="#">Tennis(0)</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Jewelry</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Jeans</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">The Girl Racing Bicycle</a></li>
+            </ul>
+        </nav>
+        <main id="content">
+            <div class="content_control">
+                <div id="cho-gan-lai">
+                    <img src="image/bf21b6aa-e31f-4d06-b767-de7637289773.jpg" alt="logo">
+                    <select name="default" id="default-select">
+                        <option value="default">Default</option>
+                    </select>
+                    <select name="show" id="show-select">
+                        <option value="9">9</option>
+                    </select>
+                </div>
+                <div class="trang">
+                    <span>1</span>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">></a>
+                    <a href="#">>|</a>
+                </div>
+            </div>
+            <div class="product-grid">
+                <!-- san pham 1-->
+                 <div class="product-item">
+                    <div class="product-image-container">
+                        <img src="image/z5930163678018_19b247db3d0cf984c0f6e7a392e36b2b - Doanh Viet.jpg" alt="Apple Cinema 30">
+                        <span class="product-tag new">NEW</span>
+                        <span class="product-tag sale">SALE</span>
+                    </div>
+                    <div class="product-infor">
+                        <h3 class="product-name">Apple Cinema 30</h3>
+                        <p class="product-price">
+                            <span class="discount-price">$110.00</span>
+                            <span class="origin-price">$122.00</span>
+                        </p>
+                    </div>
+                 </div>
+                 <!--san pham 2-->
+                 <div class="product-item">
+                    <div class="product-image-container">
+                        <img src="image/z5930163678018_19b247db3d0cf984c0f6e7a392e36b2b - Doanh Viet.jpg" alt="Canon EOS 5D">
+                        <span class="product-tag new">NEW</span>
+                        <span class="product-tag sale">SALE</span>
+                    </div>
+                    <div class="product-infor">
+                        <h3 class="product-name">Canon EOS 5D</h3>
+                        <p class="product-price">
+                            <span class="discount-price">$98.00</span>
+                            <span class="origin-price">$120.00</span>
+                        </p>
+                    </div>
+                 </div>
+                 <!--san pham 3-->
+                 <div class="product-item">
+                    <div class="product-image-container">
+                        <img src="image/z5930163678018_19b247db3d0cf984c0f6e7a392e36b2b - Doanh Viet.jpg" alt="Canon EOS 5D">
+                        <span class="product-tag new">NEW</span>
+                        <span class="product-tag sale">SALE</span>
+                    </div>
+                    <div class="product-infor">
+                        <h3 class="product-name">Canon EOS 5D</h3>
+                        <p class="product-price">
+                            <span class="discount-price">$98.00</span>
+                            <span class="origin-price">$120.00</span>
+                        </p>
+                    </div>
+                 </div>
+            </div>
+        </main>
+    </div>
+    <!-- Phần cho Câu 2 -->
+    <div id="javascript-section" style="padding: 20px; margin-top: 30px; border-top: 2px solid #333;">
+        <h2>Câu 2: JavaScript</h2>
+        <div>
+            <label for="inputText">Nhập chuỗi:</label><br>
+            <textarea id="inputText" rows="4" cols="50" maxlength="255"></textarea>
+            <!-- Đề bài yêu cầu thông báo "Số từ có X ký tự", nhưng hình ảnh lại hiển thị "Số từ có 4 ký tự:".
+                 Tôi sẽ làm theo hình ảnh là đếm số từ có 4 ký tự.
+                 Và câu hỏi "Thông báo ra màn hình cho biết trong chuỗi có mấy từ có 4 ký tự và bắt đầu bằng chữ m?"
+                 sẽ là một alert riêng.
+            -->
+        </div>
+        <p>Số từ có 4 ký tự: <span id="fourLetterWordCountDisplay">0</span></p>
+        <button id="processStringBtn">Tìm</button>
+        <button id="clearInputBtn">Hủy bỏ</button>
+        <p id="charCountMessage" style="margin-top: 10px;"></p> <!-- Để hiển thị số ký tự của chuỗi nhập -->
+
+    </div>
+
+    <script>
+        // JavaScript cho Câu 2
+        const inputText = document.getElementById('inputText');
+        const processStringBtn = document.getElementById('processStringBtn');
+        const clearInputBtn = document.getElementById('clearInputBtn');
+        const fourLetterWordCountDisplay = document.getElementById('fourLetterWordCountDisplay');
+        const charCountMessage = document.getElementById('charCountMessage');
+
+        // Yêu cầu 1: Hiển thị số ký tự của chuỗi nhập (không quá 255)
+        inputText.addEventListener('input', function() {
+            const currentLength = this.value.length;
+            charCountMessage.textContent = `Chuỗi hiện tại có ${currentLength} ký tự.`;
+            if (currentLength > 255) {
+                // Không cho nhập quá 255, nhưng textarea có maxlength="255" đã xử lý
+                // Chỉ cần thông báo nếu muốn
+                charCountMessage.textContent += ' (Đã đạt giới hạn 255 ký tự)';
+                // Hoặc alert: alert("Chuỗi không được vượt quá 255 ký tự!");
+            }
+        });
+
+
+        processStringBtn.addEventListener('click', function() {
+            const text = inputText.value.trim(); // Lấy giá trị và loại bỏ khoảng trắng thừa
+
+            if (text.length === 0) {
+                alert("Vui lòng nhập chuỗi.");
+                return;
+            }
+
+            if (text.length > 255) {
+                alert("Chuỗi không được vượt quá 255 ký tự!");
+                return;
+            }
+
+            const words = text.split(/\s+/).filter(word => word.length > 0); // Tách thành từ, loại bỏ từ rỗng
+
+            let fourLetterWords = 0;
+            let fourLetterMWords = 0;
+
+            words.forEach(word => {
+                // Loại bỏ dấu câu ở cuối từ nếu có, để đếm độ dài chính xác hơn
+                const cleanWord = word.replace(/[.,!?;:"“”]$/, ''); 
+
+                if (cleanWord.length === 4) {
+                    fourLetterWords++;
+                    if (cleanWord.toLowerCase().startsWith('m')) {
+                        fourLetterMWords++;
+                    }
+                }
+            });
+
+            // Hiển thị số từ có 4 ký tự (theo hình ảnh)
+            fourLetterWordCountDisplay.textContent = fourLetterWords;
+
+            // Thông báo ra màn hình (alert) theo yêu cầu
+            alert(`Trong chuỗi có ${fourLetterMWords} từ có 4 ký tự và bắt đầu bằng chữ 'm'.`);
+        });
+
+        clearInputBtn.addEventListener('click', function() {
+            inputText.value = '';
+            fourLetterWordCountDisplay.textContent = '0';
+            charCountMessage.textContent = '';
+        });
+    </script>
+</body>
+</html>
